@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - Manuel Alberto Bogliani</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="tema-oscuro">
+  <main class="tarjeta">
+    <header class="cabecera-tarjeta">
+      <div class="texto-encabezado">
+        <h1>Ficha Personal</h1>
+        <p class="subtitulo">Perfil del Estudiante</p>
+      </div>
+
+      <button id="boton-tema" class="boton-icono" aria-label="Alternar tema">
+        <span id="icono-tema" aria-hidden="true">Cambiar modo</span>
+      </button>
+    </header>
+
+    <section class="cuerpo-tarjeta">
+      <aside class="perfil">
+        <img class="foto-perfil" src="manuel.jpg" alt="Foto de perfil">
+      </aside>
+
+      <section class="informacion">
+        <h2 class="nombre">Manuel Alberto Bogliani</h2>
+
+        <nav class="secciones" aria-label="Secciones">
+          <a class="boton-seccion" href="/index.html">HOME</a>
+          <a class="boton-seccion" href="https://manubogliani.github.io/manucomics.galeria/">Local Comercial</a>
+          <a class="boton-seccion" href="https://manubogliani.github.io/bogliani.htmlfanpage.io/">Fan Page</a>
+          <a class="boton-seccion" href="/formulario.html">Contacto</a>
+        </nav>
+
+        <h3>Contacto</h3>
+
+        <form class="formulario-contacto" action="#" method="post" novalidate>
+          <div class="detalles" style="grid-template-columns: 1fr 1fr; gap:16px;">
+            <div>
+              <label for="nombre" style="display:block; font-size:0.78rem; color:var(--acento2); margin-bottom:6px; font-weight:700">Nombre Completo</label>
+              <input id="nombre" name="nombre" type="text" class="input-text" placeholder="Nombre completo" required style="width:100%; padding:10px; border-radius:6px; border:1px solid rgba(0,0,0,0.08);">
+            </div>
+
+            <div>
+              <label for="email" style="display:block; font-size:0.78rem; color:var(--acento2); margin-bottom:6px; font-weight:700">Email</label>
+              <input id="email" name="email" type="email" class="input-text" placeholder="tu@ejemplo.com" required style="width:100%; padding:10px; border-radius:6px; border:1px solid rgba(0,0,0,0.08);">
+            </div>
+          </div>
+
+          <div style="margin-top:18px;">
+            <label for="comentarios" style="display:block; font-size:0.78rem; color:var(--acento2); margin-bottom:6px; font-weight:700">Comentarios</label>
+            <textarea id="comentarios" name="comentarios" rows="6" placeholder="Escribe tu mensaje..." style="width:100%; padding:12px; border-radius:8px; border:1px solid rgba(0,0,0,0.08);"></textarea>
+          </div>
+
+          <div style="margin-top:20px; text-align:center;">
+            <button type="submit" class="boton-github" style="padding:10px 28px;">Enviar</button>
+          </div>
+        </form>
+
+      </section>
+    </section>
+
+    <footer class="pie-tarjeta">
+      <span>© 2025 Todos los derechos reservados</span>
+      <a class="boton-github" href="#" aria-label="Ver en GitHub">Ver en GitHub</a>
+    </footer>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
